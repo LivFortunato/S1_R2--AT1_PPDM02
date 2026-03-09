@@ -4,23 +4,22 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <View style={[styles.box, { backgroundColor: 'red' }]} />
-      <View style={[styles.box, { backgroundColor: 'pink' }]} />
-     <View style={[styles.box, { backgroundColor: 'purple' }]} />
+      
+      <View style={{ width: 80, height: 80, backgroundColor: 'purple' }}></View>
+      <View style={{ width: 80, height: 80, backgroundColor: 'pink' }}></View>
+      <View style={{ width: 80, height: 80, backgroundColor: 'darkred' }}></View>
+
+      <StatusBar style="auto" />
+      <StatusBar style="auto" />
     </View>
   );
 }
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: '#fff',
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    padding: 20,
-  },
-  box: {
-    width: 80,
-    height: 80,
   },
 });
